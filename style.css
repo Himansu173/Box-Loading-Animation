@@ -1,0 +1,136 @@
+body{
+    background-color: black;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20vw;
+    width: 20vw;
+}
+
+.box{
+   height: 10vw; 
+   width: 10vw;
+   position: absolute;
+}
+
+#box1{
+    background-color: rgb(0, 0, 255);
+    animation: move1 1.5s infinite;
+    z-index: 1;
+}
+
+#box2{
+    left: 10vw;
+    background-color: rgb(0, 255, 0);
+    animation: move2 1.5s infinite;
+}
+
+#box3{
+    top: 10vw;
+    background-color: red;
+    animation: move3 1.5s infinite;
+}
+
+#box4{
+    left: 10vw;
+    top: 10vw;
+    background-color: yellow;
+    animation: move4 1.5s infinite;
+    z-index: 1;
+}
+
+@keyframes move1{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 10vw;
+        left: 0;
+    }
+    50%{
+        top: 10vw;
+        left: 10vw;
+    }
+    75%{
+        left: 10vw;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes move4{
+    0%{
+        top: 10vw;
+        left: 10vw;
+    }
+    25%{
+        top: 0;
+        left: 10vw;
+    }
+    50%{
+        top: 0;
+        left: 0;
+    }
+    75%{
+        left: 0;
+        top: 10vw;
+    }
+    100%{
+        left: 10vw;
+        top: 10vw;
+    }
+}
+
+@keyframes move2{
+    0%{
+        top: 0;
+        left: 10vw;
+    }
+    25%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 10vw;
+        left: 0;
+    }
+    75%{
+        left: 10vw;
+        top: 10vw;
+    }
+    100%{
+        left: 10vw;
+        top: 0;
+    }
+}
+
+@keyframes move3{
+    0%{
+        top: 10vw;
+        left: 0;
+    }
+    25%{
+        top: 10vw;
+        left: 10vw;
+    }
+    50%{
+        top: 0;
+        left: 10vw;
+    }
+    75%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: 10vw;
+    }
+}
